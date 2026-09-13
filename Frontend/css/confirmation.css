@@ -1,0 +1,386 @@
+/* =========================================================
+   CONFIRMATION PAGE
+========================================================= */
+
+
+/* =========================================================
+   CONFIRMATION CONTAINER
+========================================================= */
+
+.confirmation{
+    width:90%;
+    max-width:700px;
+
+    margin:0 auto 120px;
+
+    text-align:center;
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.confirmation-icon{
+    width:70px;
+    height:70px;
+
+    margin:0 auto 30px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border:1px solid var(--primary);
+
+    border-radius:50%;
+
+    color:var(--primary);
+
+    font-size:25px;
+}
+
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.confirmation-label{
+    margin-bottom:20px;
+
+    color:var(--text-light);
+
+    font-size:11px;
+
+    letter-spacing:3px;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.confirmation h1{
+    font-family:"EB Garamond",serif;
+
+    font-size:clamp(2.2rem,5vw,3.5rem);
+
+    font-weight:400;
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+}
+
+
+/* =========================================================
+   MESSAGE
+========================================================= */
+
+.confirmation-message{
+    max-width:550px;
+
+    margin:0 auto 40px;
+
+    color:var(--text-light);
+
+    font-size:15px;
+
+    line-height:1.8;
+}
+
+
+/* =========================================================
+   ORDER NUMBER
+========================================================= */
+
+.order-number{
+    padding:25px;
+
+    margin:0 auto 40px;
+
+    border-top:1px solid #d8d8d8;
+    border-bottom:1px solid #d8d8d8;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:10px;
+}
+
+
+.order-number span{
+    font-size:10px;
+
+    letter-spacing:2px;
+
+    color:var(--text-light);
+}
+
+
+.order-number strong{
+    font-family:"DM Serif Text",serif;
+
+    font-size:18px;
+
+    font-weight:400;
+
+    color:var(--primary);
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.confirmation-actions{
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+}
+
+
+.confirmation-actions a{
+    min-width:220px;
+
+    height:55px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    text-decoration:none;
+
+    font-size:11px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    transition:opacity .3s ease;
+}
+
+
+/* Main action */
+
+.continue-shopping{
+    background:var(--primary);
+
+    color:var(--background);
+}
+
+
+/* Secondary action */
+
+.view-cart{
+    border:1px solid var(--primary);
+
+    color:var(--primary);
+
+    background:transparent;
+}
+
+
+.confirmation-actions a:hover{
+    opacity:.75;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width:700px){
+
+    .confirmation{
+        margin-bottom:70px;
+    }
+
+
+    .confirmation-icon{
+        width:60px;
+        height:60px;
+
+        font-size:20px;
+    }
+
+
+    .confirmation-message{
+        font-size:14px;
+    }
+
+
+    .confirmation-actions{
+        flex-direction:column;
+    }
+
+
+    .confirmation-actions a{
+        width:100%;
+        min-width:0;
+    }
+
+}
+
+
+/* =========================================================
+   CHECKOUT PROGRESS
+========================================================= */
+
+.progress{
+    width:100%;
+    max-width:1300px;
+
+    margin:20px auto 120px;
+    padding:0 40px;
+
+    display:flex;
+    justify-content:space-between;
+
+    position:relative;
+}
+
+
+/* =========================
+   PROGRESS LINE
+========================= */
+
+.progress .line{
+    position:absolute;
+
+    left:40px;
+    right:40px;
+    top:9px;
+
+    height:1px;
+
+    background:#cfcfcf;
+}
+
+
+/* =========================
+   PROGRESS ITEMS
+========================= */
+
+.progress .item{
+    position:relative;
+
+    z-index:2;
+
+    text-align:center;
+
+    background:transparent;
+}
+
+
+/* =========================
+   CIRCLES
+========================= */
+
+.progress .circle{
+    width:18px;
+    height:18px;
+
+    margin:0 auto;
+
+    border:2px solid #a8a8a8;
+
+    border-radius:50%;
+
+    background:var(--background);
+}
+
+
+/* =========================
+   COMPLETED / ACTIVE STEPS
+========================= */
+
+/* Cart is completed */
+
+.progress .item:first-of-type .circle{
+    background:#707070;
+    border-color:#707070;
+}
+
+
+/* Checkout is active */
+
+.progress .item.active .circle{
+    background:#707070;
+    border-color:#707070;
+}
+
+
+/* =========================
+   LABELS
+========================= */
+
+.progress .item span{
+    display:block;
+
+    margin-top:10px;
+
+    font-size:14px;
+
+    letter-spacing:3px;
+
+    color:var(--text-light);
+
+    font-weight:400;
+}
+
+
+/* Active label */
+
+.progress .item.active span{
+    color:var(--primary);
+
+    font-weight:500;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:700px){
+
+    .progress{
+        margin-bottom:70px;
+        padding:0 20px;
+    }
+
+
+    .progress .line{
+        left:20px;
+        right:20px;
+        top:9px;
+    }
+
+
+    .progress .item span{
+        font-size:10px;
+        letter-spacing:2px;
+    }
+
+}
+
+
+/* =========================
+   VERY SMALL SCREENS
+========================= */
+
+@media (max-width:450px){
+
+    .progress .item span{
+        font-size:8px;
+        letter-spacing:1px;
+    }
+
+}
+

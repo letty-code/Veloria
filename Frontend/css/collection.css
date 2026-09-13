@@ -1,0 +1,290 @@
+/* =========================================================
+   COLLECTION PAGE
+========================================================= */
+
+
+/* =========================================================
+   CONTENT SECTION
+========================================================= */
+
+.content-section{
+    padding:50px 0.5rem;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:var(--background);
+}
+
+
+/* =========================================================
+   PRODUCT GRID
+========================================================= */
+
+.section-one ul{
+    width:100%;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+    gap:10px;
+
+    list-style:none;
+}
+
+
+.section-one li{
+    overflow:hidden;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+
+/* =========================================================
+   PRODUCT IMAGE
+========================================================= */
+
+.item-img{
+    width:100%;
+    height:auto;
+
+    display:block;
+
+    object-fit:cover;
+
+    transition:0.4s ease;
+}
+
+
+.section-one li:hover .item-img{
+    transform:scale(1.03);
+}
+
+
+/* =========================================================
+   PRODUCT DESCRIPTION
+========================================================= */
+
+.Items-description{
+    display:flex;
+
+    justify-content:space-between;
+    align-items:center;
+
+    width:100%;
+}
+
+
+.item-name-price{
+    color:var(--primary);
+
+    font-size:0.95rem;
+    font-weight:400;
+
+    line-height:1.5;
+}
+
+
+/* =========================================================
+   CART ICON
+========================================================= */
+
+.cart-icon{
+    height:40px;
+
+    display:block;
+}
+
+
+/* =========================================================
+   ADD TO CART BUTTON
+========================================================= */
+
+.add-to-cart{
+    background:transparent;
+
+    border:none;
+
+    padding:0;
+
+    cursor:pointer;
+
+    outline:none;
+}
+
+
+.add-to-cart:focus,
+.add-to-cart:active,
+.add-to-cart:focus-visible{
+    outline:none;
+
+    box-shadow:none;
+}
+
+
+.add-to-cart img{
+    display:block;
+
+    transition:0.25s ease;
+}
+
+
+.add-to-cart:hover img{
+    opacity:0.65;
+
+    transform:scale(1.05);
+}
+
+
+.add-to-cart:active img{
+    transform:scale(0.95);
+}
+
+
+/* =========================================================
+   ADD TO CART NOTIFICATION
+========================================================= */
+
+.cart-notification{
+    position:fixed;
+
+    top:85px;
+    right:25px;
+
+    width:220px;
+
+    padding:12px 16px;
+
+    background:rgba(248,236,218,0.96);
+
+    backdrop-filter:blur(8px);
+    -webkit-backdrop-filter:blur(8px);
+
+    border:1px solid rgba(55,36,14,0.12);
+
+    box-shadow:0 8px 22px rgba(0,0,0,0.10);
+
+    color:var(--primary);
+
+    z-index:5000;
+
+    opacity:0;
+    visibility:hidden;
+
+    transform:translateY(-10px);
+
+    pointer-events:none;
+
+    transition:
+        opacity .25s ease,
+        transform .25s ease,
+        visibility .25s ease;
+}
+
+
+/* =========================================================
+   SHOW NOTIFICATION
+========================================================= */
+
+.cart-notification.show{
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(0);
+}
+
+
+/* =========================================================
+   NOTIFICATION TITLE
+========================================================= */
+
+.cart-notification-title{
+    font-family:"EB Garamond", serif;
+
+    font-size:17px;
+
+    font-weight:500;
+
+    margin-bottom:2px;
+}
+
+
+/* =========================================================
+   NOTIFICATION TEXT
+========================================================= */
+.cart-notification-text{
+    color:var(--text-light);
+
+    font-size:11px;
+
+    line-height:1.4;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width:600px){
+
+    .cart-notification{
+
+        top:75px;
+        right:15px;
+
+        width:190px;
+
+        padding:10px 14px;
+
+    }
+
+    .cart-notification-title{
+        font-size:16px;
+    }
+
+    .cart-notification-text{
+        font-size:10px;
+    }
+
+}
+ 
+
+
+/* =========================================================
+   VERY SMALL SCREENS
+========================================================= */
+
+@media (max-width:450px){
+
+    .content-section{
+        padding:40px 0.4rem;
+    }
+
+
+    .item-name-price{
+        font-size:0.9rem;
+    }
+
+
+    .cart-icon{
+        height:36px;
+    }
+
+
+    .cart-notification{
+
+        top:75px;
+
+        left:15px;
+        right:15px;
+
+        padding:15px 18px;
+    }
+
+}

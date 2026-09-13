@@ -1,0 +1,171 @@
+
+/* =========================
+   CONTACT PAGE
+========================= */
+
+.contact-page{
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
+    padding:100px 5%;
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.contact-page > .content-section{
+    width:100%;
+    display:grid;
+    grid-template-columns:1fr 1.4fr;
+    gap:90px;
+    align-items:start;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.contact-page .content{
+    max-width:650px;
+}
+
+
+.contact-page .content h2{
+    font-family:"EB Garamond", serif;
+    font-size:clamp(2rem,4vw,3.2rem);
+    font-weight:400;
+    color:var(--primary);
+    margin-bottom:25px;
+}
+
+
+.contact-page .content p{
+    color:var(--text-light);
+    font-size:1rem;
+    line-height:1.8;
+    margin-bottom:18px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+#contact-form{
+    width:100%;
+}
+
+
+#contact-form .form-group{
+    margin-bottom:30px;
+}
+
+
+#contact-form label{
+    display:block;
+    margin-bottom:10px;
+    color:var(--primary);
+    font-size:0.85rem;
+    letter-spacing:1px;
+}
+
+
+#contact-form input,
+#contact-form textarea{
+    width:100%;
+    padding:12px 0;
+    border:none;
+    border-bottom:1px solid rgba(55,36,14,0.3);
+    background:transparent;
+    color:var(--text-dark);
+    font-family:"DM Sans",sans-serif;
+    font-size:1rem;
+    outline:none;
+}
+
+
+#contact-form textarea{
+    resize:vertical;
+    min-height:120px;
+}
+
+
+#contact-form input:focus,
+#contact-form textarea:focus{
+    border-bottom-color:var(--primary);
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+#contact-form button{
+    margin-top:15px;
+    width:100%;
+    max-width:320px;
+    height:55px;
+    border:none;
+    background:var(--primary);
+    color:white;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:0.75rem;
+    cursor:pointer;
+}
+
+
+#contact-form button:hover{
+    opacity:0.85;
+}
+
+
+/* =========================
+   CONTACT INFORMATION
+========================= */
+
+.contact-page .content:last-child{
+    border-top:1px solid rgba(55,36,14,0.2);
+    padding-top:40px;
+}
+
+
+.contact-page .content:last-child h2{
+    font-size:2rem;
+}
+
+
+.contact-page .content:last-child p{
+    margin-bottom:12px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width:768px){
+
+    .contact-page{
+        padding:70px 6%;
+    }
+
+    .contact-page > .content-section{
+        grid-template-columns:1fr;
+        gap:60px;
+    }
+
+    .contact-page .content h2{
+        font-size:2.2rem;
+    }
+
+    #contact-form button{
+        max-width:100%;
+    }
+
+}
+
+

@@ -1,0 +1,262 @@
+
+/* =========================================================
+   ACCOUNT PAGE
+   ========================================================= */
+
+
+/* =========================================================
+   1. ACCOUNT CONTAINER
+   ========================================================= */
+
+.container {
+    width: 90%;
+    max-width: 850px;
+
+    margin: 80px auto;
+
+    background-color: var(--background);
+}
+
+
+/* =========================================================
+   2. TITLES
+   ========================================================= */
+
+.container h1 {
+    font-family: "EB Garamond", serif;
+
+    font-size: 32px;
+
+    font-weight: 300;
+
+    letter-spacing: 3px;
+
+    margin: 0 0 15px;
+}
+
+
+.container .subtitle {
+    color: #777;
+
+    margin: 0 0 50px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   3. FORM
+   ========================================================= */
+
+#account-form,
+#sign-in-form {
+    width: 100%;
+}
+
+
+/* =========================================================
+   4. FORM GROUP
+   ========================================================= */
+
+.form-group {
+    margin-bottom: 35px;
+}
+
+
+/* =========================================================
+   5. LABELS
+   ========================================================= */
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #666;
+
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   6. INPUTS
+   ========================================================= */
+
+.form-group input {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    border: none;
+
+    border-bottom: 1px solid #d9d9d9;
+
+    padding: 12px 0;
+
+    font-family: inherit;
+
+    font-size: 17px;
+
+    outline: none;
+
+    background: transparent;
+
+    color: var(--text);
+}
+
+
+/* Input focus */
+
+.form-group input:focus {
+    border-bottom-color: #000;
+}
+
+
+/* =========================================================
+   7. SUBMIT BUTTON
+   ========================================================= */
+
+#account-form > button,
+#sign-in-form > button {
+    display: block;
+
+    width: 100%;
+
+    max-width: 320px;
+
+    height: 55px;
+
+    margin-top: 30px;
+
+    color: white;
+
+    background: var(--primary);
+
+    border: none;
+
+    cursor: pointer;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    font-size: 14px;
+
+    transition: opacity 0.2s ease;
+}
+
+
+#account-form > button:hover,
+#sign-in-form > button:hover {
+    opacity: 0.9;
+}
+
+
+/* =========================================================
+   8. SIGN IN / CREATE ACCOUNT LINK
+   ========================================================= */
+
+.login-link {
+    margin-top: 25px;
+
+    color: #666;
+
+    font-size: 14px;
+}
+
+
+.login-link a {
+    color: #111;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   9. MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .container {
+        width: 88%;
+
+        margin: 60px auto;
+    }
+
+
+    .container h1 {
+        font-size: 28px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .container .subtitle {
+        font-size: 14px;
+
+        margin-bottom: 40px;
+    }
+
+
+    .form-group {
+        margin-bottom: 28px;
+    }
+
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+
+    .form-group input {
+        font-size: 16px;
+    }
+
+
+    #account-form > button,
+    #sign-in-form > button {
+        max-width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   10. SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 450px) {
+
+    .container {
+        width: 90%;
+
+        margin: 45px auto;
+    }
+
+
+    .container h1 {
+        font-size: 25px;
+    }
+
+
+    .container .subtitle {
+        font-size: 13px;
+
+        margin-bottom: 35px;
+    }
+
+
+    .login-link {
+        font-size: 13px;
+    }
+
+}
+

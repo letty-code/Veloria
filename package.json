@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "gsap": "^3.15.0"
+  },
+  "name": "veloria5",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "vite": "^8.2.2"
+  },
+"scripts": {
+  "dev": "vite Frontend",
+  "build": "vite build ",
+  "preview": "vite preview"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

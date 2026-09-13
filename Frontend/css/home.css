@@ -1,0 +1,55 @@
+
+
+
+/* =========================
+   COLLECTION GRID
+========================= */
+
+.content-section{
+    padding:50px 1rem;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.section-one ul{
+    width:100%;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    list-style:none;
+}
+
+.section-one ul li{
+    overflow:hidden;
+}
+
+.section-one ul li img{
+    width:100%;
+    height:auto;
+    object-fit:cover;
+}
+
+.section-one ul li:hover img{
+    transform:scale(1.03);
+}
+
+@media (max-width:768px){
+
+    .description-overlay{
+        padding:20px 5%;
+    }
+
+    .content h2{
+        font-size:clamp(1.5rem,5vw,3rem);
+    }
+
+    .content p{
+        max-width:100%;
+    }
+
+    .section-one ul{
+        grid-template-columns:1fr;
+    }
+}
