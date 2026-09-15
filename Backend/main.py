@@ -34,7 +34,7 @@ ALLOWED_ORIGINS = [
 SESSION_COOKIE_NAME = "veloria_session"
 SESSION_DURATION_HOURS = 2
 SESSION_COOKIE_SECURE = os.getenv("SESSION_COOKIE_SECURE", "false").lower() == "true"
-
+SESSION_COOKIE_SAMESITE = os.getenv("SESSION_COOKIE_SAMESITE", "lax").lower()
 
 # ============================================================
 # FastAPI
