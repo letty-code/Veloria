@@ -1,25 +1,24 @@
 import { defineConfig } from "vite";
-import { resolve } from "path";
 
 export default defineConfig({
-  base: "./",
+  root: "Frontend",
 
   build: {
     outDir: "dist",
 
     rollupOptions: {
       input: {
-        index: resolve(__dirname, "Frontend/index.html"),
-        about: resolve(__dirname, "Frontend/about.html"),
-        account: resolve(__dirname, "Frontend/account.html"),
-        cart: resolve(__dirname, "Frontend/cart.html"),
-        checkout: resolve(__dirname, "Frontend/checkout.html"),
-        confirmation: resolve(__dirname, "Frontend/confirmation.html"),
-        contact: resolve(__dirname, "Frontend/contact.html"),
-        accessories: resolve(__dirname, "Frontend/collection pages/Accessories.html"),
-        bags: resolve(__dirname, "Frontend/collection pages/Bags.html"),
-        dresses: resolve(__dirname, "Frontend/collection pages/Dresses.html"),
-        shoes: resolve(__dirname, "Frontend/collection pages/Shoes.html")
+        index: "Frontend/index.html",
+        about: "Frontend/about.html",
+        account: "Frontend/account.html",
+        cart: "Frontend/cart.html",
+        checkout: "Frontend/checkout.html",
+        confirmation: "Frontend/confirmation.html",
+        contact: "Frontend/contact.html",
+        accessories: "Frontend/collection pages/Accessories.html",
+        bags: "Frontend/collection pages/Bags.html",
+        dresses: "Frontend/collection pages/Dresses.html",
+        shoes: "Frontend/collection pages/Shoes.html"
       }
     }
   }
