@@ -117,7 +117,7 @@
    ========================================================= */
 
 #account-form > button,
-#my-account-section,
+#my-account-form,
 #sign-in-form > button {
     display: block;
 
@@ -148,7 +148,7 @@
 
 
 #account-form > button:hover,
-#my-account-section,
+#my-account-form,
 #sign-in-form > button:hover {
     opacity: 0.9;
 }
