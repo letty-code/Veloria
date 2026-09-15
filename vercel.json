@@ -5,6 +5,46 @@
     {
       "source": "/",
       "destination": "/Frontend/index.html"
+    },
+    {
+      "source": "/about.html",
+      "destination": "/Frontend/about.html"
+    },
+    {
+      "source": "/account.html",
+      "destination": "/Frontend/account.html"
+    },
+    {
+      "source": "/cart.html",
+      "destination": "/Frontend/cart.html"
+    },
+    {
+      "source": "/checkout.html",
+      "destination": "/Frontend/checkout.html"
+    },
+    {
+      "source": "/confirmation.html",
+      "destination": "/Frontend/confirmation.html"
+    },
+    {
+      "source": "/contact.html",
+      "destination": "/Frontend/contact.html"
+    },
+    {
+      "source": "/Accessories.html",
+      "destination": "/Frontend/collection pages/Accessories.html"
+    },
+    {
+      "source": "/Bags.html",
+      "destination": "/Frontend/collection pages/Bags.html"
+    },
+    {
+      "source": "/Dresses.html",
+      "destination": "/Frontend/collection pages/Dresses.html"
+    },
+    {
+      "source": "/Shoes.html",
+      "destination": "/Frontend/collection pages/Shoes.html"
     }
   ]
 }
