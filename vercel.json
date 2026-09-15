@@ -1,50 +1,50 @@
 {
   "buildCommand": "npm run build",
-  "outputDirectory": "dist",
+  "outputDirectory": "Frontend/dist",
   "rewrites": [
     {
       "source": "/",
-      "destination": "/Frontend/index.html"
+      "destination": "/index.html"
     },
     {
       "source": "/about.html",
-      "destination": "/Frontend/about.html"
+      "destination": "/about.html"
     },
     {
       "source": "/account.html",
-      "destination": "/Frontend/account.html"
+      "destination": "/account.html"
     },
     {
       "source": "/cart.html",
-      "destination": "/Frontend/cart.html"
+      "destination": "/cart.html"
     },
     {
       "source": "/checkout.html",
-      "destination": "/Frontend/checkout.html"
+      "destination": "/checkout.html"
     },
     {
       "source": "/confirmation.html",
-      "destination": "/Frontend/confirmation.html"
+      "destination": "/confirmation.html"
     },
     {
       "source": "/contact.html",
-      "destination": "/Frontend/contact.html"
+      "destination": "/contact.html"
     },
     {
       "source": "/Accessories.html",
-      "destination": "/Frontend/collection pages/Accessories.html"
+      "destination": "/collection pages/Accessories.html"
     },
     {
       "source": "/Bags.html",
-      "destination": "/Frontend/collection pages/Bags.html"
+      "destination": "/collection pages/Bags.html"
     },
     {
       "source": "/Dresses.html",
-      "destination": "/Frontend/collection pages/Dresses.html"
+      "destination": "/collection pages/Dresses.html"
     },
     {
       "source": "/Shoes.html",
-      "destination": "/Frontend/collection pages/Shoes.html"
+      "destination": "/collection pages/Shoes.html"
     }
   ]
 }
